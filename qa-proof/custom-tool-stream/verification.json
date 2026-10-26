@@ -1,0 +1,48 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "4c905957e5b24b40df74194fa9334688385c9929",
+  "live_requests": 4,
+  "mocked": false,
+  "repetitions": [
+    {
+      "repeat": 1,
+      "phase": "before",
+      "ui_result": "mismatch",
+      "screenshot": "before-initial.png",
+      "status_text": "MISMATCH \u00b7 custom input events missing or inconsistent"
+    },
+    {
+      "repeat": 1,
+      "phase": "after",
+      "ui_result": "pass",
+      "screenshot": "after-initial.png",
+      "status_text": "PASS \u00b7 input events match completed tool"
+    },
+    {
+      "repeat": 2,
+      "phase": "before",
+      "ui_result": "mismatch",
+      "screenshot": "before.png",
+      "status_text": "MISMATCH \u00b7 custom input events missing or inconsistent"
+    },
+    {
+      "repeat": 2,
+      "phase": "after",
+      "ui_result": "pass",
+      "screenshot": "after.png",
+      "status_text": "PASS \u00b7 input events match completed tool"
+    }
+  ],
+  "regression_cases": 18,
+  "merge_base_failures": 18,
+  "targeted_suite_passed": 439,
+  "patch_coverage": {
+    "changed_executable_lines": 53,
+    "covered_changed_lines": 53,
+    "uncovered_changed_lines": [],
+    "patch_statement_coverage_percent": 100.0
+  },
+  "temporary_key_revoked": true,
+  "revoked_key_http_status": 401,
+  "surface": "interactive API inspection client, not Codex desktop"
+}
