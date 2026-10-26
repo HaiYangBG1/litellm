@@ -1,0 +1,15 @@
+{
+  "before": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "after": "e723693b953e18a2696d95ba35f884a9d15eccfc",
+  "live_repetitions": 2,
+  "requests": 4,
+  "provider_mocked": false,
+  "new_regression_before": "12 failed",
+  "new_regression_after": "12 passed",
+  "focused_suite_after": "84 passed",
+  "patch_statement_coverage_percent": 100.0,
+  "screenshots": {
+    "before.png": "8224ebc5697df0dba3f319d174200632c58b0d323657da0c4e1bd602144d1f36",
+    "after.png": "e6e2bb2d362091c3f65f26c1cc6d02c0ed674df31ccaeb5350b03d3701447698"
+  }
+}

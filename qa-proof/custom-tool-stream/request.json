@@ -1,0 +1,16 @@
+{
+  "model": "bridged-haiku",
+  "input": "Call write_note once. Its raw input must be the following note, with no extra text: stream proof c27dfd2ad4\nquoted \"value\" and end.",
+  "stream": true,
+  "max_output_tokens": 256,
+  "tools": [
+    {
+      "type": "custom",
+      "name": "write_note",
+      "description": "Write the exact note as raw text. Do not reply in assistant text.",
+      "format": {
+        "type": "text"
+      }
+    }
+  ]
+}

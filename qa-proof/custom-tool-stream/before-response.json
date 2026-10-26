@@ -1,0 +1,167 @@
+{
+  "phase": "before",
+  "revision": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "http": 200,
+  "seconds": 5.587,
+  "custom_delta_count": 0,
+  "function_argument_delta_count": 10,
+  "custom_done_count": 0,
+  "completed_input_present": true,
+  "input_matches": false,
+  "status": "mismatch",
+  "events": [
+    {
+      "type": "response.created",
+      "response": {
+        "status": "in_progress",
+        "output": []
+      }
+    },
+    {
+      "type": "response.in_progress",
+      "response": {
+        "status": "in_progress",
+        "output": []
+      }
+    },
+    {
+      "type": "response.output_item.added",
+      "output_index": 0,
+      "item": {
+        "type": "custom_tool_call",
+        "id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+        "call_id": "toolu_019MDTijuiQ5YEAmMs8fj2D8",
+        "name": "write_note",
+        "status": "in_progress",
+        "input": ""
+      }
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "{\"conte"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "nt\": \"s"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "tream p"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "roof c2"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "7dfd2ad"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "4\\nquot"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "ed \\\"va"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "lue\\\" a"
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "nd end."
+    },
+    {
+      "type": "response.function_call_arguments.delta",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "delta": "\"}"
+    },
+    {
+      "type": "response.function_call_arguments.done",
+      "item_id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+      "output_index": 0,
+      "arguments": "{\"content\": \"stream proof c27dfd2ad4\\nquoted \\\"value\\\" and end.\"}"
+    },
+    {
+      "type": "response.output_item.done",
+      "sequence_number": 16,
+      "output_index": 0,
+      "item": {
+        "type": "custom_tool_call",
+        "id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+        "call_id": "toolu_019MDTijuiQ5YEAmMs8fj2D8",
+        "name": "write_note",
+        "status": "completed",
+        "input": "stream proof c27dfd2ad4\nquoted \"value\" and end."
+      }
+    },
+    {
+      "type": "response.completed",
+      "response": {
+        "status": "completed",
+        "usage": {
+          "input_tokens": 439,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "text_tokens": 439
+          },
+          "output_tokens": 69,
+          "output_tokens_details": {
+            "reasoning_tokens": 0,
+            "text_tokens": 69
+          },
+          "total_tokens": 508,
+          "cost": 7.84e-05
+        },
+        "output": [
+          {
+            "type": "custom_tool_call",
+            "call_id": "toolu_019MDTijuiQ5YEAmMs8fj2D8",
+            "id": "ctc_toolu_019MDTijuiQ5YEAmMs8fj2D8",
+            "name": "write_note",
+            "input": "stream proof c27dfd2ad4\nquoted \"value\" and end.",
+            "status": "completed"
+          }
+        ]
+      }
+    }
+  ],
+  "request": {
+    "model": "bridged-haiku",
+    "input": "Call write_note once. Its raw input must be the following note, with no extra text: stream proof c27dfd2ad4\nquoted \"value\" and end.",
+    "stream": true,
+    "max_output_tokens": 256,
+    "tools": [
+      {
+        "type": "custom",
+        "name": "write_note",
+        "description": "Write the exact note as raw text. Do not reply in assistant text.",
+        "format": {
+          "type": "text"
+        }
+      }
+    ]
+  },
+  "real_upstream": true
+}
